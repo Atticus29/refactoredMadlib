@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-  <!-- <script src="js/jquery-3.1.1.js"></script> -->
-  <script src="js/scripts.js"></script>
-  <title></title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Madlib Forms</title>
+  </head>
+  <body>
+    <div id="madlib" class="container">
+      <h1>Fill in the blanks to write your story!</h1>
+      <div>
+        <form>
+          <div class="form-group">
+            <label for="person1">A name</label>
+            <input id="person1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="person2">Another name</label>
+            <input id="person2" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="animal">An animal</label>
+            <input id="animal" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="exclamation">An exclamation</label>
+            <input id="exclamation" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="verb">A past tense verb</label>
+            <input id="verb" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="noun">A noun</label>
+            <input id="noun" class="form-control" type="text">
+          </div>
 
-</body>
+          <button type="submit" class="btn">Show me the story!</button>
+        </form>
+      </div>
+
+      <div id="story">
+        <h1>A fantastical adventure</h1>
+        <p>
+One day, <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.
+</p>
+      </div>
+    </div>
+    <div id="self-letter" class="container well">
+      <div>
+        <form>
+          <div class="">
+            <input id="user-name" type="text" value="enter your name">
+          </div>
+          <input id="letter-submit" class='btn' type="submit" value="Go!">
+        </form>
+      </div>
+      <div id="response-letter">
+        <h1>Greetings <span class='user-name-output'></span>!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
